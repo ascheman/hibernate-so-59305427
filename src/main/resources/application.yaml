@@ -13,6 +13,8 @@ spring:
         dialect: org.hibernate.dialect.H2Dialect
         # don't log all SQLs when running the tests
         show_sql: false
+    hibernate:
+      ddl-auto: none
   liquibase:
     change-log: classpath:/db/db.changelog.xml
     default-schema:
